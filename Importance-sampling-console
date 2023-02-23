@@ -1,0 +1,6 @@
+#for first distribution
+h <- function(x) (1*sqrt(1-(x*x))*exp((x-.25/2))*((x>=0)&(x<1))
+Y <- h(x)
+c(mean(Y),var(Y))
+se = sd(Y)/sqrt(length(Y))
+CI = 1.96*sd(Y)/sqrt(length(Y))
